@@ -557,7 +557,7 @@ def pow(x, y, name=None):
       dtype = x.dtype
       y = ops.convert_to_tensor(y, dtype, name="y")
     if dtype not in (dtypes.int32, dtypes.int64):
-        return gen_math_ops._pow(x, y, name=name)
+      return gen_math_ops._pow(x, y, name=name)
     return gen_math_ops._integral_pow(x, y, name=name)
 
 
